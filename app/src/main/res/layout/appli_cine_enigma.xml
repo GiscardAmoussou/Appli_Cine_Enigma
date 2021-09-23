@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCDD2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appli_cine_enigma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Appli Ciné Enigma"
+        android:textColor="#ce3232"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/titre_du_film"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Titre du film"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/date_heure_projection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Date et Heure de la projection"
+        android:inputType="datetime" />
+
+    <EditText
+        android:id="@+id/note_scenario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Note pour le scénario"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/note_realisation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Note pour la réalisation"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/note_musique"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Note pour la musique"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/zone_description_critique"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:hint="Zone de description / critique"
+        android:fitsSystemWindows="true"
+        android:breakStrategy="balanced"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Submit"
+        android:textColor="#fff" />
+</LinearLayout>
